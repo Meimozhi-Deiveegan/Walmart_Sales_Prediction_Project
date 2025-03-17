@@ -1,4 +1,87 @@
+# Capstone Project: Walmart Sales Forecasting - Project Report
 
+## 1. Introduction
+
+This report details the exploratory data analysis (EDA) and initial forecasting attempts conducted on the Walmart sales dataset. The primary objective of this project is to understand the factors influencing weekly sales and develop a predictive model to forecast future sales. This report focuses on addressing the initial set of business questions provided.
+
+## 2. Objectives
+
+The project aims to:
+
+* Perform comprehensive EDA to gain insights into the dataset.
+* Analyze the impact of various factors (unemployment rate, seasonality, temperature, CPI) on weekly sales.
+* Identify top and worst-performing stores.
+* Develop a forecasting solution for Walmart sales.
+
+## 3. Methodology
+
+The project followed these steps:
+
+1.  **Data Loading and Initial Inspection:**
+    * Imported necessary libraries (Pandas, NumPy, Matplotlib, Seaborn).
+    * Loaded the "Walmart.csv" dataset into a Pandas DataFrame.
+    * Performed initial data inspection using `info()` and `head()`.
+2.  **Data Preprocessing:**
+    * Set the 'Date' column as the index.
+    * Created a copy of the dataframe for analysis.
+3.  **Exploratory Data Analysis (EDA):**
+    * Analyzed the correlation between 'Unemployment' and 'Weekly_Sales' for each store.
+    * Visualized weekly sales trends over time to identify seasonality.
+    * Further analysis of Temperature and CPI relationship to weekly sales.
+4.  **Addressing Business Questions:**
+    * Analyzed store-wise correlation to determine the impact of unemployment.
+    * Identified seasonal trends through time-series plots.
+    * Analyzed the effect of Temperature and CPI on weekly sales.
+    * Determined the top and worst-performing stores based on historical data.
+
+## 4. Dataset Description
+
+The dataset "Walmart.csv" contains the following columns:
+
+* **Store:** Store number.
+* **Date:** Week of sales.
+* **Weekly_Sales:** Sales for the given store in that week.
+* **Holiday_Flag:** If it is a holiday week.
+* **Temperature:** Temperature on the day of the sale.
+* **Fuel_Price:** Cost of the fuel in the region.
+* **CPI:** Consumer Price Index.
+* **Unemployment:** Unemployment Rate.
+
+## 5. Results and Observations
+
+### 5.1. Impact of Unemployment Rate
+
+* The correlation between 'Unemployment' and 'Weekly_Sales' varies significantly across stores.
+* Stores 38 and 44 show a strong negative correlation, indicating that increased unemployment leads to decreased sales.
+* Store 36 showed a strong positive correlation.
+* Most stores showed little to no correlation.
+
+### 5.2. Seasonal Trends
+
+* Time-series plots of 'Weekly_Sales' reveal seasonal trends.
+* Sales tend to peak around holiday periods, particularly towards the end of the year.
+
+### 5.3. Impact of Temperature and CPI
+
+* The provided code does not show a clear analysis of the Temperature or CPI relationship to weekly sales. Further code should be added to analyze these relationships.
+
+### 5.4. Top and Worst-Performing Stores
+
+* The code does not contain the logic to identify top and worst-performing stores. This will need to be added.
+
+## 6. Conclusion
+
+The EDA provided valuable insights into the factors influencing Walmart's weekly sales. Unemployment rates appear to have a store-specific impact, with some stores being more sensitive than others. Seasonal trends are evident, with holiday periods driving sales peaks. Further analysis is required to determine the impact of Temperature and CPI.
+
+## 7. Future Work
+
+* Complete the analysis of Temperature and CPI impact on weekly sales.
+* Implement logic to identify and rank top and worst-performing stores.
+* Develop and evaluate forecasting models for predicting weekly sales.
+* Implement time series models.
+* Add more detailed visualizations.
+* Add more detailed business conclusions.
+* Consider holiday effect in the model creation.
 
 
 # Walmart-Sales-Prediction-Best-ML-Algorithms
